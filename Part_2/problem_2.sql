@@ -13,4 +13,4 @@ FROM (
         COUNT(exercise_id) AS num_complete
     FROM exercises
     GROUP BY user_id
-) exercise_count
+) exercise_count;

@@ -5,6 +5,7 @@ SELECT
 FROM (
     -- Count the number of users & number of users who completed an exercise in their cohort month.
     -- Group by month.
+    -- Assumption made: A user's first exercise can only be completed on or after their signup date.
     SELECT
         COUNT(IF(MONTH(users.created_at) = MONTH(first_exercises.exercise_completion_date), 1, NULL)) AS completed_cohort,
         COUNT(users.user_id) AS num_users,
@@ -19,6 +20,6 @@ FROM (
         GROUP BY exercises.user_id
     ) first_exercises ON users.user_id = first_exercises.user_id
     GROUP BY MONTH(users.created_at)
-) first_month_complete
+) first_month_complete;
 
 
