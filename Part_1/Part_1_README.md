@@ -1,0 +1,2 @@
+# Part 1
+For read-only purposes, the notebook `problem_1_notebook.ipynb` can be reviewed on GitHub.  In order to run the notebook locally, please ensure that you have Python 3 installed on your local machine, along with the dependencies from the `requirements.txt` file. Please use any IDE or other software capable of running an iPython notebook (e.g. iPython, Jupyter, or an appropriate extension to your favorite IDE).  For example, I have written my notebook using the VS Code IDE and Microsoft's Jupyter notebook extension.
